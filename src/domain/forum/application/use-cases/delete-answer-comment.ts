@@ -33,6 +33,6 @@ export class DeleteAnswerCommentUseCase {
 
     await this.answerCommentsRepository.delete(answerComment);
 
-    return right({});
+    return right(null);
   }
 }
