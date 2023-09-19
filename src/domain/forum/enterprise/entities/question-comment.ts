@@ -7,7 +7,7 @@ export interface QuestionCommentProps extends CommentProps {
   questionId: UniqueEntityId;
   content: string;
   createdAt: Date;
-  updatedAt?: Date;
+  updatedAt?: Date | null;
 }
 
 export class QuestionComment extends Comment<QuestionCommentProps> {
